@@ -67,9 +67,105 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Acceso\CerrarSesion.aspx" />
+    <Content Include="Acceso\Login.aspx" />
+    <Content Include="Acceso\Registro.aspx" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="Cuenta\Perfil.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.3.1.js" />
+    <Content Include="Libros\ConsultarLibros.aspx" />
+    <Content Include="Libros\Eliminar.aspx" />
+    <Content Include="Libros\InsertarLibro.aspx" />
+    <Content Include="Libros\Modificar.aspx" />
+    <Content Include="Libros\ModificarLibro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceso\CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acceso\CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acceso\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acceso\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\Libro_Acciones.cs" />
+    <Compile Include="Acciones\Usuario_Acciones.cs" />
+    <Compile Include="BaseDeDatos\Conexion.cs" />
+    <Compile Include="Cuenta\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\ConsultarLibros.aspx.cs">
+      <DependentUpon>ConsultarLibros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libros\ConsultarLibros.aspx.designer.cs">
+      <DependentUpon>ConsultarLibros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libros\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\InsertarLibro.aspx.cs">
+      <DependentUpon>InsertarLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libros\InsertarLibro.aspx.designer.cs">
+      <DependentUpon>InsertarLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libros\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\ModificarLibro.aspx.cs">
+      <DependentUpon>ModificarLibro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libros\ModificarLibro.aspx.designer.cs">
+      <DependentUpon>ModificarLibro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Libro.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +177,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
